@@ -7,14 +7,14 @@ import { useI18n } from "@/contexts/i18n";
 
 const cx = classNames.bind(styles);
 
-const Project = () => {
+ const Project = () => {
   const { t } = useI18n();
 
   const projects: ProjectItem[] = [
     {
       id: "1",
       title: "Bio Link App",
-      description: "Ứng dụng bio link cá nhân với Next.js và TypeScript.",
+      description: t("project_item_1_description"),
       tools: ["Next.js", "TypeScript", "SCSS"],
       image:
         "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
@@ -23,7 +23,7 @@ const Project = () => {
     {
       id: "2",
       title: "Ecommerce Shop",
-      description: "Một shop bán hàng điện tử với React và Node.js.",
+      description: t("project_item_2_description"),
       tools: ["React", "Node", "Express", "MongoDB", "SCSS","Authentication", "JWT"],
       image:
         "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
@@ -32,7 +32,7 @@ const Project = () => {
     {
       id: "3",
       title: "Social Media",
-      description: "Một nền tảng mạng xã hội với React và Node.js.",
+      description: t("project_item_3_description"),
       tools: ["React", "Node", "Express", "MongoDB", "Tailwind CSS", "Authentication", "JWT","Clerk", "Inngest"],
       image:
         "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
@@ -41,7 +41,7 @@ const Project = () => {
       {
       id: "4",
       title: "Game",
-      description: "Game",
+      description: t("project_item_4_description"),
       tools: ["Not"],
       image:
         "https://images.unsplash.com/photo-1555066931-4365d14bab8c",

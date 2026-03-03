@@ -38,9 +38,14 @@ const dictionaries: Dictionaries = {
     contact_error_invalid_email: "Email không hợp lệ",
     contact_subject: "Chủ đề",
     contact_message: "Nội dung",
-
+    project_description: "Dự án của tôi",
     project_title: "Dự án của tôi",
     project_view: "Xem dự án →",
+
+    project_item_1_description: "Tạo bio link cá nhân bằng Next.js và TypeScript.",
+    project_item_2_description: "Tạo website thương mại điện tử bằng React và Node.js.",
+    project_item_3_description: "Tạo nền tảng mạng xã hội bằng React và Node.js.",
+    project_item_4_description: "Game",
   },
   en: {
     nav_home: "Home",
@@ -73,9 +78,14 @@ const dictionaries: Dictionaries = {
     contact_error_invalid_email: "Invalid email format",
     contact_subject: "Subject",
     contact_message: "Message",
-
+    project_description: "My Projects",
     project_title: "My Projects",
     project_view: "View project →",
+
+    project_item_1_description: "Create a personal bio link using Next.js and TypeScript.",
+    project_item_2_description: "Create an e-commerce shop using React and Node.js.",
+    project_item_3_description: "Create a social media platform using React and Node.js.",
+    project_item_4_description: "Game",
   },
 };
 
