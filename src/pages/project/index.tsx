@@ -26,7 +26,7 @@ const Project = () => {
       description: "Một shop bán hàng điện tử với React và Node.js.",
       tools: ["React", "Node", "Express", "MongoDB", "SCSS","Authentication", "JWT"],
       image:
-        "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+        "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
       link: "https://shop-client-ruddy.vercel.app",
     },
     {
@@ -35,7 +35,7 @@ const Project = () => {
       description: "Một nền tảng mạng xã hội với React và Node.js.",
       tools: ["React", "Node", "Express", "MongoDB", "Tailwind CSS", "Authentication", "JWT","Clerk", "Inngest"],
       image:
-        "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+        "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
       link: "https://social-client-peach.vercel.app",
     },
       {
@@ -44,7 +44,7 @@ const Project = () => {
       description: "Game",
       tools: ["Not"],
       image:
-        "",
+        "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
       link: "",
     },
   ];
