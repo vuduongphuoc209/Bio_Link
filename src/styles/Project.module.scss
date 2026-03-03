@@ -1,0 +1,47 @@
+.projectPage {
+  padding: 80px 60px;
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 60px;
+
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+@media (max-width: 1024px) {
+  .projectPage {
+    padding: 70px 40px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+}
+
+@media (max-width: 640px) {
+  .projectPage {
+    padding: 60px 18px;
+  }
+
+  .title {
+    font-size: 34px;
+    margin-bottom: 34px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+}

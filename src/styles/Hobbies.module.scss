@@ -1,0 +1,123 @@
+.wrapper {
+  min-height: 100vh;
+  padding: 100px 40px;
+  background: var(--background);
+  color: var(--foreground);
+  border-radius: 28px;
+}
+
+:global(html[data-theme="dark"]) .wrapper {
+  background: radial-gradient(circle at top left, #1e1b4b, #0f172a 70%);
+  color: white;
+}
+
+:global(html[data-theme="light"]) .wrapper {
+  background: radial-gradient(circle at top left, #eef2ff, #ffffff 70%);
+  color: #0f172a;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 60px;
+
+  background: linear-gradient(90deg, #6366f1, #8b5cf6, #ec4899);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.grid {
+  display: grid;
+  gap: 30px;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    padding: 80px 28px;
+  }
+
+  .title {
+    font-size: 38px;
+    margin-bottom: 46px;
+  }
+}
+
+@media (max-width: 640px) {
+  .wrapper {
+    padding: 64px 18px;
+  }
+
+  .title {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+}
+
+.card {
+  padding: 25px;
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  transition: 0.3s ease;
+}
+
+:global(html[data-theme="light"]) .card {
+  background: rgba(15, 23, 42, 0.04);
+  border: 1px solid rgba(15, 23, 42, 0.10);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(139, 92, 246, 0.5);
+}
+
+.card h2 {
+  margin-bottom: 15px;
+}
+
+.card p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.imageWrapper {
+  margin-top: 15px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.imageWrapper:hover img {
+  transform: scale(1.08);
+}
+
+.videoWrapper {
+  margin-top: 15px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.videoWrapper video {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 16px;
+}

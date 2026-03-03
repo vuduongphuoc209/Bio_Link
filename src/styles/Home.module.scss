@@ -1,0 +1,284 @@
+.home {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  transition: 0.4s ease;
+  position: relative;
+}
+
+.dark {
+  background: radial-gradient(circle at 20% 20%, #1e293b, #0f172a 60%); 
+  color: #f1f5f9; box-shadow: 0 0 40px rgb(71, 71, 234); 
+  backdrop-filter: blur(25px); 
+  border: 1px solid rgba(255, 255, 255, 0.1); 
+  border-radius: 30px;
+}
+
+.light {
+  background: linear-gradient(135deg, #f8fafc, #e2e8f0); 
+  color: #0f172a; 
+  box-shadow: 0 0 40px rgba(139, 92, 246, 0.6); 
+  backdrop-filter: blur(25px); 
+  border: 1px solid rgba(255, 255, 255, 0.1); 
+  border-radius: 30px;
+}
+
+.toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 8px 16px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  z-index: 1;
+}
+
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 95%;
+  display: flex;
+  border-radius: 28px;
+  overflow: hidden;
+  backdrop-filter: blur(25px);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.45);
+}
+
+/* LEFT */
+.left {
+  flex: 1;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  border: 6px solid white;
+  object-fit: cover;
+}
+
+/* RIGHT */
+.right {
+  flex: 1.2;
+  padding: 60px;
+}
+
+.name {
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 25px;
+  line-height: 1.2;
+
+  background: linear-gradient(
+    90deg,
+    #6366f1,
+    #8b5cf6,
+    #ec4899,
+    #6366f1
+  );
+  background-size: 300% auto;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: gradientMove 5s linear infinite;
+
+  text-shadow: 0 0 25px rgba(139, 92, 246, 0.4);
+}
+
+.cursor {
+  animation: blink 1s infinite;
+}
+
+.description {
+  white-space: pre-line;
+  line-height: 1.8;
+  font-size: 16px;
+  padding: 20px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  margin-bottom: 20px;
+  transition: 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(139, 92, 246, 0.3);
+  }
+}
+
+.age,
+.email,
+.phone {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 18px;
+  border-radius: 14px;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  transition: all 0.3s ease;
+}
+
+.age:hover,
+.email:hover,
+.phone:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(139, 92, 246, 0.35);
+}
+
+/* EDIT FORM */
+.editForm {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.formRow {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .right {
+    padding: 40px;
+  }
+
+  .name {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    align-items: stretch;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .left {
+    padding: 36px 20px;
+  }
+
+  .right {
+    padding: 28px 20px;
+  }
+
+  .avatar {
+    width: 210px;
+    height: 210px;
+    border-width: 5px;
+  }
+
+  .name {
+    font-size: 34px;
+  }
+
+  .formRow {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 420px) {
+  .name {
+    font-size: 30px;
+  }
+
+  .description {
+    padding: 16px;
+  }
+}
+
+.formRow .formGroup {
+  flex: 1;
+}
+
+.editForm input,
+.editForm textarea {
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.editForm textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 12px;
+}
+
+.saveBtn {
+  flex: 1;
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: white;
+  cursor: pointer;
+}
+
+.cancelBtn {
+  flex: 1;
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: white;
+  cursor: pointer;
+}
+
+.editBtn {
+  margin-top: 20px;
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: none;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  cursor: pointer;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+@keyframes gradientMove {
+  to {
+    background-position: 300% center;
+  }
+}
