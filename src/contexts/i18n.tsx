@@ -26,7 +26,17 @@ const dictionaries: Dictionaries = {
     home_save: "Lưu",
     home_cancel: "Hủy",
 
+    home_profile_description: `Tôi là một Full-Stack Developer tỉ mỉ và tận tâm, có kinh nghiệm xây dựng các ứng dụng web responsive và có khả năng mở rộng.
+Tôi chuyên về các công nghệ hiện đại như React, Next.js và Node.js, tập trung vào kiến trúc sạch và code dễ bảo trì.
+
+Tôi luôn học hỏi liên tục và mang đến các giải pháp chất lượng cao nhằm nâng cao trải nghiệm người dùng và đáp ứng mục tiêu kinh doanh.`,
+
     hobbies_title: "Phong cách sống & Sở thích",
+
+    hobby_item_1_description: "Tôi thích những bản nhạc chill cảm xúc về đêm khi code hoặc thư giãn.",
+    hobby_item_2_description: "Tôi chơi guitar acoustic và thu âm những bản cover instrumental nhẹ nhàng.",
+    hobby_item_3_description: "Chơi bóng đá giúp tôi năng động hơn và rèn luyện kỹ năng làm việc nhóm.",
+    hobby_item_4_description: "Tôi thích làm việc trong một không gian tối giản, mát mẻ và ánh sáng dịu để tập trung sâu.",
 
     contact_title: "Liên hệ với tôi",
     contact_placeholder_your: "Thông tin của bạn: {{field}}",
@@ -66,7 +76,17 @@ const dictionaries: Dictionaries = {
     home_save: "Save",
     home_cancel: "Cancel",
 
+    home_profile_description: `I am a dedicated and detail-oriented Full-Stack Developer with experience in building responsive and scalable web applications.
+I specialize in modern technologies such as React, Next.js, and Node.js, with a strong focus on clean architecture and maintainable code.
+
+I am committed to continuous learning and delivering high-quality solutions that enhance user experience and meet business objectives.`,
+
     hobbies_title: "My Lifestyle & Hobbies",
+
+    hobby_item_1_description: "I enjoy emotional late-night chill songs while coding or relaxing.",
+    hobby_item_2_description: "I play acoustic guitar and record soft instrumental covers.",
+    hobby_item_3_description: "Playing football helps me stay active and build teamwork skills.",
+    hobby_item_4_description: "I love working in a cool, minimal, softly-lit environment for deep focus.",
 
     contact_title: "Contact Me",
     contact_placeholder_your: "Your {{field}}",

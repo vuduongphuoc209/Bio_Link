@@ -17,19 +17,31 @@ interface Profile {
 export default function Home() {
   const [isEditing, setIsEditing] = useState(false);
   const [typedName, setTypedName] = useState("");
-  const { t } = useI18n();
+  const { t, language } = useI18n();
+
+  const [autoDescription, setAutoDescription] = useState(() =>
+    t("home_profile_description")
+  );
 
   const [profile, setProfile] = useState<Profile>({
     name: "Vu Duong Phuoc",
-    descripton: `I am a dedicated and detail-oriented Full-Stack Developer with experience in building responsive and scalable web applications.
-I specialize in modern technologies such as React, Next.js, and Node.js, with a strong focus on clean architecture and maintainable code.
-
-I am committed to continuous learning and delivering high-quality solutions that enhance user experience and meet business objectives.`,
+    descripton: t("home_profile_description"),
     age: 21,
     email: "phuocvu@gmail.com",
     phone: "0987654321",
     avatar: "",
   });
+
+  useEffect(() => {
+    const nextAuto = t("home_profile_description");
+    setAutoDescription(nextAuto);
+
+    if (isEditing) return;
+    setProfile((prev) => {
+      if (prev.descripton !== autoDescription) return prev;
+      return { ...prev, descripton: nextAuto };
+    });
+  }, [language, t, isEditing, autoDescription]);
 
   // Typing Effect
   useEffect(() => {

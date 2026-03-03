@@ -13,7 +13,7 @@ export const hobbies: Hobby[] = [
     id: 1,
     title: "🎧 Chill Music",
     description:
-      "I enjoy emotional late-night chill songs while coding or relaxing.",
+      "hobby_item_1_description",
     type: "music",
     embed:
       "https://open.spotify.com/embed/playlist/3rsZDUMlVEukq5yvRSAqEF?utm_source=generator",
@@ -22,7 +22,7 @@ export const hobbies: Hobby[] = [
     id: 2,
     title: "🎸 Guitar",
     description:
-      "I play acoustic guitar and record soft instrumental covers.",
+      "hobby_item_2_description",
     type: "guitar",
     video: "videos/guitar.mp4",
   },
@@ -30,7 +30,7 @@ export const hobbies: Hobby[] = [
     id: 3,
     title: "⚽ Football",
     description:
-      "Playing football helps me stay active and build teamwork skills.",
+      "hobby_item_3_description",
     type: "sport",
     image: "images/football.jpg"
   },
@@ -38,7 +38,7 @@ export const hobbies: Hobby[] = [
     id: 4,
     title: "❄️ Chill Workspace",
     description:
-      "I love working in a cool, minimal, softly-lit environment for deep focus.",
+      "hobby_item_4_description",
     type: "workspace",
     image: "images/room.jpg"
   },

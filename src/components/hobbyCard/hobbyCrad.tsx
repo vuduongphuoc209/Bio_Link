@@ -1,6 +1,7 @@
 import styles from "@/styles/Hobbies.module.scss"
 import classNames from "classnames/bind"
 import { Hobby } from "@/data/hobbies"
+import { useI18n } from "@/contexts/i18n"
 
 const cx = classNames.bind(styles)
 
@@ -9,10 +10,12 @@ interface Props {
 }
 
 export default function HobbyCard({ hobby }: Props) {
+  const { t } = useI18n()
+
   return (
     <div className={cx("card")}>
       <h2>{hobby.title}</h2>
-      <p>{hobby.description}</p>
+      <p>{t(hobby.description)}</p>
         {hobby.image && (
             <div className={cx("imageWrapper")}>
                 <img src={hobby.image} alt={hobby.title} />
