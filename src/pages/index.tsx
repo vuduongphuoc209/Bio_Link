@@ -29,7 +29,7 @@ export default function Home() {
     age: 21,
     email: "phuocvu@gmail.com",
     phone: "0987654321",
-    avatar: "",
+    avatar: "/avatar.png",
   });
 
   useEffect(() => {

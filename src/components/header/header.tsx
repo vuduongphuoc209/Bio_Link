@@ -1,4 +1,4 @@
-import React from 'react'
+
 import classNames from 'classnames/bind'
 import styles from './header.module.scss'
 import Link from 'next/link'
@@ -29,6 +29,9 @@ const header = () => {
         <nav className={cx('nav')} aria-label="Primary">
           <Link href="/" className={cx('navLink', { active: isActive('/') })}>
             {t('nav_home')}
+          </Link>
+           <Link href="/about" className={cx('navLink', { active: isActive('/about') })}>
+            {t('nav_about')}
           </Link>
           <Link href="/project" className={cx('navLink', { active: isActive('/project') })}>
             {t('nav_project')}
